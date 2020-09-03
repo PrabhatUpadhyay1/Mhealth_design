@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/round_shape"
+    android:backgroundTint="#E6E7E8"
+    android:padding="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/person_icon"
+        app:civ_border_color="#fff"
+        app:civ_border_width="2dp" />
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_image"
+        android:fontFamily="@font/poppins_medium"
+        android:text="City - Gurgaon"
+        android:textColor="#000"
+        android:textSize="10sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/city"
+        android:fontFamily="@font/poppins_medium"
+        android:text="State - Haryana"
+        android:textColor="#000"
+        android:textSize="10sp"
+        android:textStyle="normal" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_toEndOf="@id/profile_image">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Vicky Teneja"
+            android:textAllCaps="true"
+            android:textColor="#000"
+            android:textSize="14dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:fontFamily="@font/poppins_medium"
+            android:padding="1dp"
+            android:text="Gender - Male"
+            android:textColor="#000"
+            android:textSize="9sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginStart="18sp"
+            android:layout_toEndOf="@id/gender"
+            android:fontFamily="@font/poppins_medium"
+            android:padding="1dp"
+            android:text="Age - 35yrs"
+            android:textColor="#000"
+            android:textSize="9sp"
+            android:textStyle="normal" />
+
+
+        <TextView
+            android:id="@+id/weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/age"
+            android:layout_marginStart="18dp"
+            android:layout_toEndOf="@id/gender"
+            android:fontFamily="@font/poppins_medium"
+            android:padding="1dp"
+            android:text="Weight - 95Kg"
+            android:textColor="#000"
+            android:textSize="9sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gender"
+            android:fontFamily="@font/poppins_medium"
+            android:padding="1dp"
+            android:text="Height - 5'10"
+            android:textColor="#000"
+            android:textSize="9sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/referal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/height"
+            android:fontFamily="@font/poppins_medium"
+            android:padding="1dp"
+            android:text="Referal Code: xxxx01"
+            android:textColor="#000"
+            android:textSize="9sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="2dp"
+            android:drawableStart="@drawable/ic_baseline_phone_in_talk_24"
+            android:drawablePadding="10sp"
+            android:fontFamily="@font/poppins_medium"
+            android:padding="1dp"
+            android:text="9999998545"
+            android:textColor="#000"
+            android:textSize="12sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/blood_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/poppins_medium"
+            android:padding="1dp"
+            android:text="Blood Type - B+ve"
+            android:textColor="#000"
+            android:textSize="9sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/decline"
+            android:layout_width="100dp"
+            android:layout_height="26dp"
+            android:layout_below="@id/referal"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/round_shape"
+            android:backgroundTint="#BA1919"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Decline"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="9sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/accept"
+            android:layout_width="100dp"
+            android:layout_height="26dp"
+            android:layout_below="@id/referal"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/round_shape"
+            android:backgroundTint="#47C902"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Approve"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="9sp"
+            android:textStyle="bold"
+            tools:ignore="SmallSp" />
+    </RelativeLayout>
+
+</RelativeLayout>
